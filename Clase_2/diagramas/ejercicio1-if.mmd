@@ -1,0 +1,7 @@
+flowchart TD
+    A[Inicio] --> B[Asignar edad = 15]
+    B --> C{Edad es mayor o igual a 18?}
+    C -->|Sí| D[Eres mayor de edad. Puedes ingresar.]
+    C -->|No| E[Eres menor de edad. No puedes ingresar.]
+    D --> F[Fin]
+    E --> F

@@ -1,0 +1,10 @@
+flowchart TD
+    A[Inicio] --> B[Solicitar numero con prompt]
+    B --> C{"Es valido? No vacio, no nulo y numero"}
+    C -->|No| D[Mostrar alerta: Ingresa un valor valido] --> E[Fin]
+    C -->|Si| F[Inicializar i = 1]
+    F --> G{"i <= 10?"}
+    G -->|Si| H[Calcular tabla = numeroIngresado * i]
+    H --> I[Mostrar resultado en consola]
+    I --> J[i = i + 1] --> G
+    G -->|No| E
