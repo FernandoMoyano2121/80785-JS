@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop Lenovo ThinkPad",
+    "precio": 1250.50,
+    "stock": 12,
+    "categoria": "Electrónica"
+  },
+  {
+    "id": 2,
+    "nombre": "Auriculares Bluetooth Sony",
+    "precio": 89.99,
+    "stock": 35,
+    "categoria": "Audio"
+  },
+  {
+    "id": 3,
+    "nombre": "Cafetera Nespresso",
+    "precio": 149.00,
+    "stock": 20,
+    "categoria": "Hogar"
+  }
+]
