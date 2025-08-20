@@ -54,11 +54,20 @@ class TaskList {
     }
   }
 
-  /*
-  deleteTask() {}
-  EditTask() {}
-  mostrarTareas() {}
-  */
+  editTask(id, updateTask) {
+    const taskToEdit = this.tasks.find((task) => task.id === id);
+    if (taskToEdit !== undefined) {
+      taskToEdit.descripcion = updateTask.descripcion;
+      taskToEdit.vencimiento = updateTask.vencimiento;
+      taskToEdit.estado = updateTask.estado;
+    } else {
+      alert("no se encontro el id");
+    }
+    this.saveTaskInStorage();
+  }
+
+  /* deleteTask() {} */
+  /* mostrarTareas(){}*/
 }
 
 class Task {
@@ -85,7 +94,11 @@ if (myTaskList.tasks.length === 0) {
   myTaskList.addTask(task1);
   myTaskList.addTask(task2);
 
-  myTaskList.saveTaskInStorage();
+  myTaskList.editTask(1, {
+    descripcion: "Hacer numeros",
+    vencimiento: "2025-09-27",
+    estado: "completado",
+  });
 }
 
 console.log(myTaskList);
