@@ -102,7 +102,7 @@ class TaskList {
     }
   }
 
-  mostrarTareas() {
+  showTasks() {
     if (this.tasks.length === 0) {
       console.log("No hay tareas en la lista");
       return;
@@ -164,11 +164,11 @@ if (myTaskList.tasks.length === 0) {
 console.log(myTaskList);
 
 // MOSTRAR TAREAS CON EL USO DEL METODO
-myTaskList.mostrarTareas();
+myTaskList.showTasks();
 
 // Demostrar el uso de los nuevos métodos
 console.log("ESTADO INICIAL");
-myTaskList.mostrarTareas();
+myTaskList.showTasks();
 
 // Ejemplo de eliminación de tarea
 console.log("\nELIMINANDO TAREA CON ID 2");
@@ -176,7 +176,7 @@ myTaskList.deleteTask(2);
 
 // Mostrar estado después de eliminar
 console.log("\nESTADO DESPUÉS DE ELIMINAR");
-myTaskList.mostrarTareas();
+myTaskList.showTasks();
 
 // Agregar una nueva tarea para demostrar funcionalidad
 console.log("\nAGREGANDO NUEVA TAREA");
@@ -186,4 +186,4 @@ myTaskList.saveTaskInStorage();
 
 // Mostrar estado final
 console.log("\n=== ESTADO FINAL ===");
-myTaskList.mostrarTareas();
+myTaskList.showTasks();
