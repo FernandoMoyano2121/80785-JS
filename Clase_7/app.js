@@ -1,10 +1,15 @@
+/******************* vinculando elementos HTML en Js **********************/
+
 const contenedor1 = document.getElementById("contenedor1");
 console.log(contenedor1.nodeName);
 console.log(contenedor1.textContent);
 
+/************************** incrustando HTML ******************************/
+
 let nombre = "Juan";
 contenedor1.innerHTML = `<strong>Hola ${nombre}</strong>
 `;
+/* *********************agregando clases desde Js *****************************/
 
 contenedor1.className = "contenedor1";
 contenedor1.classList.add("contenedor1");
@@ -20,7 +25,7 @@ for (const element of contenedor2) {
 
 /* ******************** Acceso por query selector ******************/
 
-const contenedor3 = document.getElementsByClassName("#contenedor3");
+const contenedor3 = document.querySelector("#contenedor3");
 console.log(contenedor3);
 
 /* ********************* Acceso por query selector All ****************/
